@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 
+import VideoCard from './components/VideoCard';
 import SearchService from './services/search.service';
 import './App.css';
 
@@ -30,6 +31,9 @@ function App() {
         >
         </input>
         <button className="button" onClick={search}>Search</button>
+      </div>
+      <div className="searchResult">
+        {searchResult.map(i => <VideoCard key={i.videoId} info={i} />)}
       </div>
     </div>
   );

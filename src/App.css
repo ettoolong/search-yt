@@ -27,3 +27,8 @@
   border: 1px solid #555;
   cursor: pointer;
 }
+
+.searchResult {
+  display: flex;
+  flex-direction: column
+}
